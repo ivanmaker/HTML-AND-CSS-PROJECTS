@@ -1,2 +1,6 @@
 # HTML-AND-CSS-PROJECTS
-Course Work for The Tech Academy
+
+This repository will contain course Work for The Tech Academy JavaScript Developer bootcamp for the HTML and CSS course.
+
+
+
