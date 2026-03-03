@@ -422,6 +422,13 @@ input[type="submit"]:hover{
 #about-text{
     text-align: justify;
     padding-top: 20px;
-    margin-left: 40px;
-    margin-right: 70px;
+    margin-left: 370px;
+    margin-right: 370px;
+}
+
+@media screen and (max-width: 600px){
+    #about-text{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
 }
