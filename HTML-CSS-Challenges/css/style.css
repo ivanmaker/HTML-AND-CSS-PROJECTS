@@ -1,0 +1,200 @@
+@media screen and (max-width: 600px){
+    p{
+        font-size: 40px;
+    }
+    #background-video{
+        opacity: 0;
+    }
+
+}
+
+:root{
+    --main-color: #558a65;
+}
+
+/*VIDEOS*/
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+#text-overlay-video{
+    max-width: 35%;
+    min-height: 10%;
+}
+
+/*NAVBAR*/
+.nav-bar {
+    overflow: hidden;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 50px;
+    z-index: 9;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.nav-bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/*IMAGES*/
+/*This centers the mountain.jpg image*/
+.center-img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+img {
+    filter: hue-rotate(180deg);
+    border-radius: 200px;
+    margin-bottom: 20px;
+}
+
+/*Text overlay for the images*/
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-shadow: 5px 5px 0 var(--main-color);
+    transition: 1s ease;
+}
+
+.img-overlay{
+    transition: 1s ease;
+}
+
+/*Container to hold the image text*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.container:hover .img-overlay{
+    opacity: 0;
+}
+
+/*FOOTER*/
+
+/*Centers the heading at the top of the page*/
+.center-text {
+    text-align: center;
+}
+
+/*TABLE*/
+table, tr, th, td {
+    border: 5px solid;
+    border-color: var(--main-color);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--main-color);
+}
+
+table {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+th, td {
+    background-color: rgb(163, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(39, 70, 35);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header{
+    padding-top: 100px;
+}
+
+
+footer{
+    background-color: var(--main-color);
+    margin-top: 50px;
+    /*Negative margins stretch the footer background beyond the web browser screen edge on the left and right*/
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+    bottom: 0;/*Positions the footer on the bottom of the screen*/
+}
+
+.footer-space{
+    padding-left: 32%;
+    padding-right: 50%;
+}
+
+/*COLUMNS*/
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    background-color: var(--main-color);
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.column-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/*GENERAL STYLING*/
+
+p{
+    transition: 1s ease;
+}
+
+p:hover{
+    opacity: 0.7;
+    color: red;
+    transition: 0.3s ease;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 5px 5px 0 var(--main-color);
+    font-size: 70px;
+    font-weight: 600;
+}
